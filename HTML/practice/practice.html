@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="header-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Courses Offered</h1>
+        <article>
+            <section id="home">
+                <h3>Subject</h3>
+
+                <ul>
+                    <li>Maths</li>
+                    <li>Science</li>
+                    <li>Physic</li>
+                </ul>
+                <figure>
+                    <img src="images/subjects.jpeg" alt="subject picture">
+                    <figcaption><strong>Course Offered Subjects</strong></figcaption>
+                </figure>
+            </section>
+        </article>
+        <article>
+            <section id="courses">
+                <h3>Courses</h3>
+                <ul>
+                    <li>Java Full Stack</li>
+                    <li>Python Full Stack</li>
+                    <li>MERN Stack</li>
+                    <li>Data Analysis</li>
+                </ul>
+            </section>
+        </article>
+
+        <article>
+            <section id="services">
+                <h3>Services</h3>
+                <ol>
+                    <li>Call Center</li>
+                    <li>Chat Bot</li>
+                    <li>Contact Us</li>
+                </ol>
+
+            </section>
+        </article>
+        <article>
+            <section id="about">
+                <h3>About Us</h3>
+                <ul>
+                    <li>Privacy Policies</li>
+                    <li>Company Policies</li>
+                    <li>Terms and Conditions</li>
+                    <li>User Policies</li>
+                </ul>
+            </section>
+        </article>
+        <aside>
+            <details>
+                <summary>What is the durations of the course ?</summary>
+                <p> There is <time datetime="P3M">3</time> & <time datetime="P6M">6</time> months Course based the Course.</p>
+            </details>
+        </aside>
+
+        <article>
+            <section id="contactUs">
+                <h3>Contact Us</h3>
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <p>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Enter Your Name"
+                                autocomplete="on" required autofocus>
+
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name"
+                                required>
+                        </p>
+                        <p>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password"
+                                placeholder="please enter your unique password">
+
+                        </p>
+                        <p>
+                            <label for="mail">Mail</label>
+                            <input type="email" name="mail" id="mail" placeholder="Enter your Mail" required>
+                        </p>
+                        <p>
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                                placeholder="Enter Your Mobile Number">
+                        </p>
+                        <p>
+                            <label for="decade">Faviorate Decade</label>
+                            <input type="number" name="decade" id="decade" min="1950" max="2020" step="5">
+                        </p>
+                        <p>
+                            
+                        <label for="add">Your Address</label>
+                        <textarea name="address" id="add"></textarea>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Course Interests</legend>
+                        <label for="courseInterests">Interested Courses Choose Here</label>
+                       
+                        <select name="courseInterests" id="courseInterests">
+                            <option value="java">Java</option>
+                            <option value="python">Python</option>
+                            <option value="C" selected>C</option>
+                            <option value="C++">C++</option>
+                            <option value="php">PHP</option>
+                        </select>
+
+
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Languages</legend>
+                        <p>
+                            <input type="checkbox" name="language" id="telugu" value="Telugu">
+                            <label for="telugu">Telugu</label>
+                            
+
+                        </p>
+                        <p>
+                            <input type="checkbox" name="language" id="hindi" value="Hindi">
+                            <label for="hindi">Hindi</label>
+                            
+                        </p>
+                        <p>
+                            <input type="checkbox" name="language" id="english" value="English" checked>
+                            <label for="english">English</label>
+                           
+
+                        </p>
+                        <p> <input type="checkbox" name="language" id="urdu" value="Urdu">
+                            <label for="urdu">Urdu</label>
+                           
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <p>
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">Male</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">female</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="gender" id="other" value="other">
+                            <label for="other">Other</label>
+                        </p>
+
+                        
+                        
+                        
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Collage</legend>
+                        <label for="list">Select Your Collage</label>
+                        <input type="text" name="list" id="list" list="datalist">
+                        <datalist id="datalist">
+                            <option value="Visakhapatnam">Visakha Technical Campus</option>
+                            <option value="Hyderabad">JNTUH</option>
+                            <option value="Kakinada">JNTUK</option>
+                            <option value="Anathapur">Gurujala Vidhaya</option>
+                            <option value="Anakapalli">DIET</option>
+                        </datalist>
+                    </fieldset>
+                    <button type="submit">Get</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <button type="reset">Reset</button>
+
+                    
+                </form>
+            </section>
+        </article>
+
+
+    </main>
+    <br>
+    <b>select your course</b>
+    <i>italic font</i>
+    <strong>Strong font</strong>
+   <p> H<sub>2</sub>o</p>
+   <p>x<sup>3</sup></p>
+ <p>   <u>for underline the text</u></p>
+  <q>for quotes in the text</q>
+ <del>cross the text</del>
+ <small>the text in the tag is small</small>
+ <p>Lorem ipsum dolor sit amet consectetur <em>adipisicing elit.</em></p>
+ <abbr title="Water">H<sub>2</sub>o</abbr>
+ <blockquote>something is here</blockquote>
+
+
+
+ <table >
+    <thead>
+        <tr>
+            <th colspan="2">UG</th>
+            <th colspan="2">PG</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr>
+            <td>B.Tech</td>
+            <td>B.Com</td>
+            <td>M.Com</td>
+            <td>M.Tech</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">Select the respective Course.</td>
+        </tr>
+    </tfoot>
+</table>
+<hr>
+<br>
+<table border="1">
+    
+        <tr>
+            <th rowspan="2">UG</th>
+            <td>B.Tech</td>
+        </tr>
+        <tr>
+            <td>B.Com</td>
+        </tr>
+        <tr>
+            <th rowspan="2">PG</th>
+            <td>M.Com</td>
+
+        </tr>
+        <tr>
+            <td>M.Tech</td>
+        </tr>
+   
+ </table>
+
+    <pre>
+        <code>
+            function greet(){
+                console.log("good Morning");
+            }
+            greet();
+        </code>
+    </pre>
+    <dl>
+        <dt>Coaching Centers in India ?</dt>
+        <dd>There are 12 Coaching centers in India.</dd>
+        <dt>Coaching staff Experiences?</dt>
+        <dd>More than 4 Years of Experiences.</dd>
+        <dt>No. of Working days ?</dt>
+        <dd>Mon to Friday</dd>
+    </dl>
+    <img src="images/world_travel.jpeg" loading="lazy" alt="world travel image">
+
+ 
+
+    <footer>
+        <nav aria-label="footer-nav">
+            <ul>
+                <li><a href="#contactUs">Contact Us</a></li>
+                <li><a href="#address">Address</a></li>
+            </ul>
+        </nav>
+        <p>&lt;&lt;&lt; &copy; CourseSub&gt;&gt;&gt;</p>
+        <article id="address">
+            <section>
+                <h3>Address</h3>
+                <address>
+                    Hyderabad <br>
+                    Tech-City <br>
+                    pin code:500231 <br>
+                    Telangana <br>
+                    <a href="mailto:random@eg.com">Mail Us</a><br>
+                    <a href="tel:555555555">Call Us</a>
+                    <a href="images/subjects.jpeg" download="Subject">Download Image</a>
+                </address>
+            </section>
+        </article>
+    </footer>
+
+    <marquee behavior="scroll" >vinay</marquee>
+</body>
+
+</html>
