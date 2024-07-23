@@ -1,0 +1,34 @@
+@import './header.css';
+h1 {
+  background-color: blue;
+  color: violet;
+}
+
+button {
+  background-color: blue;
+  color: red;
+  padding: 10px;
+}
+button:hover {
+  background-color: red;
+  color: blue;
+}
+
+.box, .box2 {
+  width: 100px;
+  height: 200px;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.box:after, .box2:after {
+  content: "this is sass box";
+}
+
+.box2 {
+  border: 1px solid red;
+  background-color: blue;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+$primary-color:blue;
+$secondary-color:red;
+$third-color:violet;
+@import './header.css';
+h1{
+    background-color: $primary-color;
+    color:$third-color;
+}
+button{
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding:10px;
+    &:hover{
+        background-color:$secondary-color;
+        color:$primary-color;
+    }
+
+}
+
+@mixin flexcenter(){
+    border:2px solid black;
+    padding:10px;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    margin:0 auto;
+}
+.box{
+    width:100px;
+    height:200px;
+    @include flexcenter();
+    &:after{
+        content:'this is sass box';
+    }
+}
+@mixin genBox($color){
+    @if $color==primary{
+        border:1px solid $primary-color;
+        background-color: $secondary-color;
+    }@else if $color==secondary{
+        border: 1px solid $secondary-color;
+        background-color: $primary-color;
+    }
+
+}
+.box2{
+    @extend .box;
+    @include genBox(secondary);
+    
+}
