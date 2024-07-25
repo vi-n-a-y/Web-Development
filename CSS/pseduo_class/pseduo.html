@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo-Classes and Pseudo-Elements</title>
+<style>
+  a:link {
+    color: green;/* the default link color changes to green  */
+  }
+  
+  a:visited {
+    color: aqua;/*  change color when atleast visit the link one time*/
+  }
+  
+  a:hover {
+    color: red;/* while hovering the mouse change its color */
+  }
+  
+  a:active {
+    color: orange;/*  change color when click the link*/
+  }
+  
+  p:first-of-type {
+    font-weight: bold;
+  }
+  
+  p:last-of-type {
+    font-style: italic;
+  }
+  
+  p::first-line {
+    font-variant: small-caps;
+  }
+  
+  p::first-letter {
+    font-size: 200%;
+    color: blue;
+  }
+  
+  input::placeholder {
+    color: lightgray;
+    font-style: italic;
+  }
+  
+  ::selection {
+    background: yellow;
+    color: black;
+  }
+
+  ::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+  
+  li::marker {
+    color: red;
+    font-size: 20px;
+  }
+  /* p:lang(en) {
+  color: blue;
+}
+p:lang(fr) {
+  color: red;
+} */
+</style>
+</head>
+<body>
+  <p>This is the first paragraph.</p>
+  <p>This is the second paragraph with <a href="#">a link</a>.</p>
+  <p>This is the last paragraph.</p>
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+  <input type="text" placeholder="Enter text here">
+</body>
+</html>
