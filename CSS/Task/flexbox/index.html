@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        body{
+            background-color: rgb(208, 202, 202);
+            min-height: 100vh;
+            font-family: sans-serif;
+
+
+
+        }
+
+      
+       .header{
+            background-color: tomato;
+            height: 120px;
+        }
+        .nav{
+            background-color: plum;
+           height: 80px;
+        }
+        .footer{
+            background-color: skyblue;
+            height: 80px;
+        }
+      .main{
+            background-color:greenyellow ;
+            height: 300px;
+            padding:40px;
+            font-size: 1em;
+            text-align: center;
+            /* overflow: hidden; */
+            
+            
+        }
+        
+        .aside{
+            background-color: yellow;
+           
+        } 
+        .wrapper{
+            display:flex;
+            flex-flow: row wrap;
+            text-align: center;
+            
+            
+        }
+        .wrapper>*{
+            padding:10px;
+            margin:10px;
+            flex:1 100%;
+            border-radius: 10px;
+        }
+        @media all and (min-width:800px){
+            .main{
+                flex:2;
+            }
+            .aside1{
+                order:2;
+            }
+            .main{
+                order:1;
+            }
+            .footer{
+                order:4;
+            }
+        }
+      @media all and (min-width:600px)  {
+        .aside{
+            flex:1;
+        }
+        
+      }  
+
+      @media all and (max-width:250px){
+        .main p{
+            font-size: 0.8rem;
+           
+        }
+      }
+
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"><h1>Header</h1></header>
+        <nav class="nav"><h2>Navigation Bar</h2></nav>
+        <article class="main">
+            <h2>Main Container</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptates maiores rerum? Quia obcaecati laboriosam saepe reiciendis in, fugit voluptates! Sapiente iure pariatur eaque, sit molestias blanditiis ipsum veniam voluptas?</p>
+
+        </article>
+        <aside class="aside aside1">
+            <h2>Aside</h2>
+        </aside>
+        <footer class="footer">
+            <h2>Footer</h2>
+        </footer>
+    </div>
+
+</body>
+</html>

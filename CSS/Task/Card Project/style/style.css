@@ -169,7 +169,7 @@ main{
 
     }
     .card{
-        width:min(calc(33%-0.25rem),200px);
+        width:min(calc(33%-0.25rem),200px);/* if the calculated width is smaller then 200px is applied as fallback */
     }
 
     .card figcaption, .card p{
