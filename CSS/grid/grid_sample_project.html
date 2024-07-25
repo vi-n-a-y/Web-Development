@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:100vh;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;            grid-template-areas:
+            "nav nav nav nav"
+            "side main main main"
+            "side con1 con2 con3"
+            "side footer footer footer";
+            grid-gap:0.2rem;
+            text-align: center;
+
+        }
+
+        .header{
+        background-color: aqua;
+        grid-area: nav;
+       }
+       .side{
+        background-color: burlywood;
+        grid-area: side;
+       }
+       .main{
+        background-color: purple;
+        grid-area: main;
+       }
+       .article1{
+        grid-area:con1;
+        background-color: orange;
+       }
+       .article2{
+        background-color: green;
+        grid-area: con2;
+       }
+       .article3{
+        background-color: blue;
+        grid-area: con3;
+       }
+       .footer{
+        background-color: cornflowerblue;
+        grid-area: footer;
+       }
+
+       @media only screen and (max-width:550px){
+        .container{
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr  1.2fr 1fr;
+            grid-template-areas: 
+            "nav"
+            "side"
+            "main"
+            "con1"
+            "con2"
+            "con3"
+            "footer" ;
+        }
+       }
+    </style>
+
+</head>
+<body>
+    <body>
+        <div class="container">
+        <header class="header">
+            <nav class="nav"><h1>Navbar</h1></nav>
+        </header>
+        <aside class="side"><h2>Sidebar</h2></aside>
+        <main class="main"><h2>Main</h2></main>
+        <article class="article1"><h2>Content1</h2> </article>
+        <article class="article2"><h2>Content2</h2> </article>
+        <article class="article3"><h2>Content3</h2> </article>
+        <footer class="footer"><h2>Footer</h2></footer>
+    </div>
+    </body>
+</body>
+</html>

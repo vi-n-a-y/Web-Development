@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        } */
+       body{
+        background-color: whitesmoke;
+        min-height: 100vh;
+        display:grid;
+        grid-template-columns:auto auto auto auto;
+        gap:1rem;
+        text-align: center;
+
+       }
+       .header{
+        background-color: aqua;
+        grid-column-start:1;
+        grid-column-end:5;
+       }
+       .side{
+        background-color: burlywood;
+      grid-row-start:2;
+      grid-row-end:9;
+       }
+       .main{
+        background-color: purple;
+        grid-column:2/5;
+        grid-row:2/6;
+       }
+       .article1{
+        grid-row:6/8;
+        background-color: orange;
+       }
+       .article2{
+        background-color: green;
+        grid-row:6/8;
+       }
+       .article3{
+        background-color: blue;
+        grid-row:6/8;
+       }
+       .footer{
+        background-color: cornflowerblue;
+        grid-column:2/5;
+       }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav"><h1>Navbar</h1></nav>
+    </header>
+    <aside class="side"><h2>Sidebar</h2></aside>
+    <main class="main"><h2>Main</h2></main>
+    <article class="article1"><h2>Content1</h2> </article>
+    <article class="article2"><h2>Content2</h2> </article>
+    <article class="article3"><h2>Content3</h2> </article>
+    <footer class="footer"><h2>Footer</h2></footer>
+</body>
+</html>
