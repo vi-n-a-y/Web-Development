@@ -31,7 +31,7 @@
 
 .border {
     border: 1px solid transparent;
-    /* while using this the element not move */
+   
 }
 
 .border:hover {
