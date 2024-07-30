@@ -285,6 +285,7 @@ select {
     flex-direction: column;
     justify-content: space-evenly;
     border: 1px solid white;
+    color: white;
 }
 
 .img-con2 {
@@ -299,9 +300,33 @@ select {
     display: grid;
     justify-content: center;
     align-items: center;
+    filter: brightness(50%)
 }
 
 .footer-1 {
     display: flex;
+    justify-content: space-around;
+}
+
+.out-sis-com {
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+}
+
+.out-sis-com-1 {
+    display: flex;
+}
+
+.lg-sr {
+    margin-right: 15px;
+}
+
+.foot-last {
+    height: 30px;
+    background-color: #B4293F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
