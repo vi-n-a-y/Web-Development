@@ -303,8 +303,190 @@
             </section>
         </article>
     </footer>
-
     <marquee behavior="scroll" >vinay</marquee>
-</body>
 
+    
+    
+    
+    
+    
+    <!-- semantic elements:-structure content based on meaning -->   
+<!-- Another practice  -->
+  <header>
+
+        <h1>WorkShop</h1>
+        
+        <nav>
+        <a href="#">Home</a>
+        <a href="services">Services</a>
+        <a href="about-us">About Us</a>
+        <a href="#">Contact us</a>
+        </nav>
+    </header>
+
+    <main><!-- only one main per page -->
+        <!-- <article>First article</article>
+        <article>Second article</article> -->
+
+
+        <section id="services">
+            <h2>We provide a world class services</h2>
+        </section>
+<div>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+    <label for="name">name</label>
+    <input type="text" name="name" id="name" placeholder="enter your name">
+    <label for="password">password</label>
+    <input type="password" name="password" id="password" placeholder="Enter your password">
+
+    <button data-icon="share" data-category="web.dev">Submit</button>
+
+    </fieldset>
+</div>
+
+        <section id="about-us" aria-labelledby="aboutUs-heading">
+
+
+<!-- When marking up an article or blog post, you may want to include a quote or pull-quote, 
+    with or without a visible citation. There are elements for these three components: 
+ <blockquote>, <q>, and <cite> for a visible citation, or the cite attribute to provide
+         more information for search. -->
+            <h2 id="aboutUs-heading">About us</h2>
+            <ul>
+                <li>
+                    <blockquote>we are making the world class websites and bringing the new techonology....</blockquote>
+                    <p>the techonologies we are coming with is listed below</p>
+                    <p>Using languages<cite>Web Development</cite>&quot; those who are experience in that.&quot;</p>
+
+                </li>
+            </ul>
+        </section>
+
+<!-- order and unorder list -->
+
+<ul>
+    <li>maths</li>
+    <li>physics</li>
+    <li>biology</li>
+</ul>
+
+<ol type="A">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java-script</li>
+    <li>Java-script</li>
+    <li>Java-script</li>
+</ol>
+
+<ol reversed start="6">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java-script</li>
+</ol>
+
+<h3>Description List</h3>
+<dl>
+    <dt>Web Development</dt>
+    <dd>html</dd>
+    <dd>Css</dd>
+    <dd>Java-script</dd>
+</dl>
+
+
+
+
+    </main>
+
+
+    <div>
+        
+<!-- tabindex:-The tabindex attribute can be added to any element to enable it to receive focus. The tabindex value defines whether it gets added to the tab order, and, optionally, into a non-default tabbing order. -->
+
+<p>Click any input and then press tab key</p>
+<ol>
+    <li><input tabindex="5" value="5"></li>
+    <li><input tabindex="8" value="8"></li>
+    <li><input tabindex="3" value="3"></li>
+    <li><input tabindex="9" value="9"></li>
+    <li><input tabindex="2" value="2"></li>
+    <li><input tabindex="7" value="7"></li>
+    <li><input tabindex="4" value="4"></li>
+    <li><input tabindex="1" value="1"></li>
+    <li><input tabindex="6" value="6"></li>
+</ol>
+    </div>
+
+
+    <div class="headings">
+        <h1>heading 1</h1>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
+        <h4>heading 4</h4>
+        <h5>heading 5</h5>
+        <h6>heading 6</h6>
+
+    </div>
+
+    <div class="table">
+        <h3>Table</h3>
+        <table border="1px">
+            <caption>web-languages</caption>
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>duration</th>
+                    <th>Fees</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="value s">html</th>
+                    <td>2months</td>
+                    <td>12,000</td>
+                </tr>
+                <tr>
+                    <th>CSS</th>
+                    <td>4months</td>
+                    <td>18000</td>
+
+                </tr>
+
+                <tr>
+                    <th>Java-script</th>
+                    <td rowspan="2">6months</td>
+                    <td rowspan="2">24,0000</td>
+                </tr>
+
+                <tr >
+                    <th>php</th>
+                    
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <aside>aside</aside>
+
+
+    <footer>
+
+        <address>
+            <a href="mailto:com.workshop" target="_blank">Mail Us</a>
+            <a href="tel:1234567890">Call Us</a>
+
+            <!-- ping:-The ping attribute in HTML is used with the <a> (anchor) tag to specify a list of URLs that
+                 the browser should notify when the user clicks on the link. This is known as a "ping" request, which 
+                 is an HTTP request sent to the URLs specified in the ping attribute, and it's used for tracking purposes.
+                The ping attribute rise a privacy issues 
+                -->
+
+
+            <a href="#" download="practice.html" ping="com.tracker">user policies</a>
+        </address>
+        <p>&copy; Workshop. All &trade; &nbsp; &amp; &nbsp;rights reserved</p>
+    </footer>
+</body>
 </html>
